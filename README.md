@@ -1,6 +1,10 @@
-# Newton's Alchmictacle Lab 🜁🜂🜄
+# Newton's Alchemical Lab 🜁🜂🜄
 
 > *A virtual exploration of Sir Isaac Newton's secret chymical laboratory at Trinity College, Cambridge.*
+
+**Anchor:** `44.5520°N, 69.6317°W` (Waterville, ME 04901) — sovereign stack research layer
+
+GitHub: [keithdickey207/newtons-alchemical-lab](https://github.com/keithdickey207/newtons-alchemical-lab)
 
 **"Newton was not the first of the age of reason. He was the last of the magicians."**  
 — John Maynard Keynes (after acquiring many of Newton's alchemical papers at the 1936 Sotheby's auction)
@@ -10,6 +14,30 @@
 An interactive CLI explorer + research companion for the alchemical work of Isaac Newton (1642–1727). Newton spent ~30–40 years and wrote/transcribed roughly **one million words** on "chymistry" (the early modern blend of alchemy, chemistry, pharmacology, and matter theory).
 
 This project lets you wander a reconstructed version of his lab, examine recreated experiments, decode his cryptic *Decknamen* (cover names), and access the best digital primary sources.
+
+Part of the sovereign WQSH / Dickey.OS stack — the historical chymistry layer alongside [Newton's Alchemy](https://github.com/keithdickey207/secure-self-healing-orchestrator) (zero-trust code transmutation) and future Godot lab scenes in [04901-digital-twin](https://github.com/keithdickey207/04901-digital-twin).
+
+## Architecture
+
+```
+explore.py (CLI text adventure)
+       │  loads data/*.json
+       ▼
+rooms / substances / experiments / manuscripts
+       │  Decknamen decode, perform chymical processes
+       ▼
+Indiana Chymistry of Newton (primary sources)
+       ▲
+Future: Godot 3D lab · Aether Lab station · 04901 digital twin integration
+```
+
+| File | Role |
+|------|------|
+| `explore.py` | Interactive CLI explorer — rooms, experiments, Decknamen |
+| `data/rooms.json` | Trinity garden lab layout and descriptions |
+| `data/substances.json` | Materials + Decknamen glossary |
+| `data/experiments.json` | Key processes with historical + modern notes |
+| `data/manuscripts.json` | Manuscript references (future `read` expansion) |
 
 ## The Real Lab (Historical)
 
@@ -49,10 +77,11 @@ Historians William R. Newman and Cathrine Reck have successfully replicated seve
 
 These were not failures or delusions — they were sophisticated observations of redox, precipitation, crystallization, and acid-base chemistry, interpreted through an alchemical lens.
 
-## How to Explore
+## Quick Start
 
 ```bash
-cd /home/keithdickey207/newtons-alchemical-lab
+git clone https://github.com/keithdickey207/newtons-alchemical-lab.git
+cd newtons-alchemical-lab
 python3 explore.py
 ```
 
@@ -67,37 +96,59 @@ Commands inside the explorer (type `help` for full list):
 - `inventory`
 - `quit`
 
+> **Penguin / ChromeOS:** Pure stdlib — no venv required for `explore.py`.
+
 ## Project Structure
 
 ```
 newtons-alchemical-lab/
 ├── README.md
-├── explore.py          # Main interactive CLI explorer
+├── explore.py              # Main interactive CLI explorer
 ├── data/
-│   ├── rooms.json      # Lab layout and descriptions
-│   ├── substances.json # Materials + Decknamen glossary
-│   ├── experiments.json # Key processes with historical notes
-│   └── manuscripts.json
-├── experiments/        # Optional: Python sims of specific reactions
-└── assets/             # Future: images, Godot scenes, etc.
+│   ├── rooms.json          # Lab layout and descriptions
+│   ├── substances.json     # Materials + Decknamen glossary
+│   ├── experiments.json    # Key processes with historical notes
+│   └── manuscripts.json    # Manuscript references
+├── experiments/            # Future: Python sims of specific reactions
+└── assets/                 # Future: images, Godot scenes, etc.
 ```
 
-## Next-Level Ideas (Let's Build Them)
+## Next-Level Ideas
 
-- **Godot 3D Virtual Lab** — Walkable first-person or third-person reconstruction (you already have Godot projects and digital-twin experience).
-- **Image generation** of the lab interior, furnaces, specific experiments (silica garden, Star Regulus).
-- **Recipe simulator** — Input a Newton's notebook entry, get modern chemical interpretation + safety notes.
-- **Notebook decoder** — Tool to expand Decknamen in context.
-- **AR / WebXR** version or ComfyUI prompt pack for alchemical visuals.
-- Integration with your existing 04901 / sovereign-twin / weaver engines.
+- **Godot 3D Virtual Lab** — Walkable reconstruction (see [waterville-ar](https://github.com/keithdickey207/waterville-ar), [04901-digital-twin](https://github.com/keithdickey207/04901-digital-twin))
+- **Recipe simulator** — Input a notebook entry → modern chemical interpretation + safety notes
+- **Notebook decoder** — Expand Decknamen in context
+- **Integration** — [Aether Lab](https://github.com/keithdickey207/aether) chemical analysis station, [secure-self-healing-orchestrator](https://github.com/keithdickey207/secure-self-healing-orchestrator) `newton_alchemy.py` facade
+
+## Sovereign Stack
+
+| Project | Role |
+|---------|------|
+| **[Aether Core](https://github.com/keithdickey207/aether)** | Brain hub — USD-4 protocol, RF lab, medical, Godot 4 bridge |
+| **[District 04901 Grid](https://github.com/keithdickey207/District_04901_Grid)** | Spatial C2 — React VM canvas, UDP/WS telemetry mesh |
+| **[dickey-sovereign-core](https://github.com/keithdickey207/dickey-sovereign-core)** | Fusion + tactile physics streams → UDP :2368 |
+| **[waterville-ar](https://github.com/keithdickey207/waterville-ar)** | Godot city builder — 78 building footprints |
+| **[04901-digital-twin](https://github.com/keithdickey207/04901-digital-twin)** | Godot digital twin — ram ingest lattice |
+| **[chronosat](https://github.com/keithdickey207/chronosat)** | Orbital daemon + Godot viewer overlay |
+| **[document-fraud-detection-engine](https://github.com/keithdickey207/document-fraud-detection-engine)** | Sovereign document forensics |
+| **[secure-self-healing-orchestrator](https://github.com/keithdickey207/secure-self-healing-orchestrator)** | Zero-trust LLM self-repair — **Newton's Alchemy** facade |
+| **[sovereign-sync](https://github.com/keithdickey207/sovereign-sync)** | Mesh glue — Syncthing, Tailscale, worktree recipes |
+| **[dotfiles](https://github.com/keithdickey207/dotfiles)** | Multi-device bootstrap shell + env |
+| **newtons-alchemical-lab** (this repo) | Historical chymistry CLI explorer — Trinity College lab reconstruction |
+
+Sync mesh: Tailscale + Syncthing + git worktrees — see `~/SOVEREIGN_SYNC_QUICKSTART.md` and [sovereign-sync](https://github.com/keithdickey207/sovereign-sync).
 
 ## Sources & Further Reading
 
-- The Chymistry of Isaac Newton (primary digital edition).
-- William R. Newman, *Newton the Alchemist* (Princeton University Press) and related papers/lectures.
-- "Investigating the Site of Newton's Laboratory in Trinity College, Cambridge" — P.E. Spargo (2005).
-- Keynes' 1946 lecture "Newton, the Man".
-- PBS NOVA "Newton's Dark Secrets"; various Newman interviews and replications.
+- [The Chymistry of Isaac Newton](https://webapp1.dlib.indiana.edu/newton/) (primary digital edition)
+- William R. Newman, *Newton the Alchemist* (Princeton University Press) and related papers/lectures
+- "Investigating the Site of Newton's Laboratory in Trinity College, Cambridge" — P.E. Spargo (2005)
+- Keynes' 1946 lecture "Newton, the Man"
+- PBS NOVA "Newton's Dark Secrets"; various Newman interviews and replications
+
+## License
+
+MIT License — Copyright (c) 2026 Keith Dickey. See [LICENSE](LICENSE).
 
 ---
 

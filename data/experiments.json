@@ -1,0 +1,44 @@
+{
+  "experiments": [
+    {
+      "id": "star_regulus_antimony",
+      "name": "Star Regulus of Antimony",
+      "description": "You fuse antimony with iron filings in a strong crucible fire. Upon cooling, the regulus forms with bright radiating stars across its surface — metallic vegetation frozen in crystal.",
+      "historical_note": "Newton repeated this process in his laboratory notebooks (e.g., CUL Add. 3975), varying iron quality and fusion time. Humphrey Newton witnessed similar intense sessions.",
+      "modern_procedure": "Reduce antimony sulfide with iron in a crucible at high heat; cool slowly to obtain regulus with star facets. See Newman & Reck replications and Indiana Chymistry multimedia lab.",
+      "effect": "A beautiful regulus specimen forms. The stars catch the furnace light like a constellation in metal."
+    },
+    {
+      "id": "metal_displacement_copper_silver",
+      "name": "Metal Displacement (Copper into Silver)",
+      "description": "You place a copper coin into a solution of silver nitrate. Silver crystals plate out upon the copper surface — a 'transmutation' that Newton read as evidence of selective affinities between metals.",
+      "historical_note": "Core to the Indiana educational lab manual (Query 31 reactions). Newton interpreted such displacements as nature's hidden preferences.",
+      "modern_procedure": "Cu(s) + 2AgNO₃(aq) → 2Ag(s) + Cu(NO₃)₂(aq). Safe classroom demonstration with nitrates.",
+      "effect": "Silvery crystals bloom across the copper. The solution takes on a blue-green cast."
+    },
+    {
+      "id": "spirit_of_salt",
+      "name": "Preparation of Spirit of Salt",
+      "description": "You distill common salt with oil of vitriol. A sharp, penetrating vapor condenses — the Spirit of Salt — capable of dissolving metals and driving further chymical operations.",
+      "historical_note": "Mineral acid production was essential to Newton's experimental repertoire and manuscript transcriptions.",
+      "modern_procedure": "NaCl + H₂SO₄ → HCl(g) + NaHSO₄. Modern equivalent: hydrochloric acid generation (perform only with proper ventilation and safety).",
+      "effect": "The receiver fills with a pungent acidic distillate. Your glassware bears the marks of many such firings."
+    },
+    {
+      "id": "silica_garden",
+      "name": "Silica Garden",
+      "description": "In a tall glass jar, metal salts descend through a silicate solution. Delicate colored growths rise like mineral plants — vegetative powers made visible.",
+      "historical_note": "Newton and contemporaries were fascinated by 'vegetable' mineral forms. Replicated in the Indiana multimedia lab.",
+      "modern_procedure": "Layer dense silicate solution with metal salt solutions; observe crystal growth over hours.",
+      "effect": "Fronds and tendrils of color slowly ascend in the jar. It is disturbingly alive."
+    },
+    {
+      "id": "tree_of_diana",
+      "name": "Tree of Diana",
+      "description": "From a silver-mercury amalgam in solution, crystalline silver branches grow — Diana's tree, arborescent and gleaming.",
+      "historical_note": "A classic demonstration of 'vegetative' metal growth. Newman and Reck have reproduced this historically informed process.",
+      "modern_procedure": "Silver amalgam in nitrate solution yields dendritic silver crystals. Mercury hazards require modern safety protocols.",
+      "effect": "Silver filigree spreads through the liquid like a frozen forest."
+    }
+  ]
+}

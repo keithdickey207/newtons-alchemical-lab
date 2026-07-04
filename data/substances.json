@@ -1,0 +1,32 @@
+{
+  "decknamen": {
+    "green lion": {
+      "modern": "A volatile, corrosive intermediate — often associated with antimony regulus preparations or acidic distillates in Newton's notebooks",
+      "notes": "One of the most famous alchemical cover names. Newton encountered it in Philalethes and other sources."
+    },
+    "star regulus": {
+      "modern": "Crystalline antimony regulus (Sb) with radiating star-like facets, produced by reducing antimony ore with iron",
+      "notes": "Newton repeated this process many times, varying the iron and fusion duration. Central to his chymical investigations."
+    },
+    "sophic mercury": {
+      "modern": "A purified, 'philosophical' mercury — not common quicksilver alone, but a prepared mercurial substance central to many recipes",
+      "notes": "Newton distinguished common ☿ from 'sophic' or 'animated' mercury in transcriptions."
+    },
+    "spirit of salt": {
+      "modern": "Hydrochloric acid (HCl) or its vapors, produced by distilling salt with vitriol",
+      "notes": "Newton produced and used mineral acids extensively in displacement and dissolution experiments."
+    },
+    "tree of diana": {
+      "modern": "Crystalline silver arborescences from silver-mercury amalgam in solution",
+      "notes": "A striking 'vegetative' metal growth. Newman and Reck have replicated this in modern labs."
+    },
+    "philosopher's stone": {
+      "modern": "The hypothetical agent of transmutation and perfection — Newton sought understanding of affinities, not literal gold-making alone",
+      "notes": "Newton's private goal was deeper matter theory, not mere coinage."
+    },
+    "antimony": {
+      "modern": "Elemental antimony (Sb), symbol ♁ in Newton's notebooks",
+      "notes": "Key to the Star Regulus experiments and many fusion trials."
+    }
+  }
+}

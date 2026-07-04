@@ -1,0 +1,24 @@
+{
+  "manuscripts": [
+    {
+      "id": "add_3975",
+      "title": "Laboratory Notebook (CUL Add. 3975)",
+      "description": "Precise fusion records for antimony regulus and iron variants."
+    },
+    {
+      "id": "index_chemicus",
+      "title": "Index Chemicus",
+      "description": "Alphabetical catalogue of substances, authors, and processes from hundreds of alchemical sources."
+    },
+    {
+      "id": "praxis",
+      "title": "Praxis",
+      "description": "One of Newton's most cryptic compositions on preparation of the Stone."
+    },
+    {
+      "id": "philalethes",
+      "title": "Eirenaeus Philalethes transcriptions",
+      "description": "Recipes from the 'American Philosopher' — among the most valued and opaque sources Newton copied."
+    }
+  ]
+}

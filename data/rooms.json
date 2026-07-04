@@ -1,0 +1,44 @@
+{
+  "rooms": [
+    {
+      "id": "chambers",
+      "name": "Newton's Chambers (Trinity College)",
+      "description": "Your private first-floor rooms above the walled garden. Manuscripts crowd every surface — optical treatises beside alchemical transcriptions. Through the window, chimney smoke rises from the furnaces below. The Work calls.",
+      "objects": ["desk", "opticks_manuscript", "alchemy_notebooks", "index_chemicus"],
+      "exits": {
+        "down": "garden_path",
+        "stairs": "garden_path",
+        "garden": "garden_path"
+      }
+    },
+    {
+      "id": "garden_path",
+      "name": "Walled Garden Path",
+      "description": "A narrow path between herb beds and the chapel wall. Coal smoke and distillates hang in the cool Cambridge air. The laboratory door stands slightly ajar.",
+      "objects": ["herb_bed", "chapel_wall", "coal_bin"],
+      "exits": {
+        "up": "chambers",
+        "laboratory": "garden_lab",
+        "lab": "garden_lab"
+      }
+    },
+    {
+      "id": "garden_lab",
+      "name": "The Chymical Laboratory",
+      "description": "Your secret workshop in the garden below the chapel. Brick furnaces of your own design line the walls. Retorts bubble on sand-baths. Crucibles wait beside a silica garden jar where mineral forms grow like strange plants. This is where thirty years of chymistry unfold.",
+      "objects": [
+        "furnaces",
+        "retorts",
+        "lab_notebook",
+        "star_regulus_display",
+        "silica_garden_jar",
+        "distillation_apparatus",
+        "crucibles"
+      ],
+      "exits": {
+        "up": "garden_path",
+        "chambers": "garden_path"
+      }
+    }
+  ]
+}
